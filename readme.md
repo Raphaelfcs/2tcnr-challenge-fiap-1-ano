@@ -10,6 +10,8 @@ Desenvolvimento de uma solução para monitoramento de temperatura de frigorific
 - Compra
 - cadastro
 
+
+
 ## Desenvolvimento
 
 #### Etapas de desenvolvimento
@@ -31,7 +33,9 @@ Nesta etapa desenvolvemos o sistema de monitoramento utiizando tecnologias iot (
 - Módulo MCP2515
 - Sensor DHT22
 
-![ArqMonitoring](arquitetura/iot_temperatura.drawio.html)
+![ArqMonitoring](img/iot_temperatura.jpg)
+
+
 
 
 #### Etapa 2
@@ -43,4 +47,4 @@ Nesta etapa desenvolvemos o desenho de arquitetura na GCP e AWS que se encontra 
 
 Abaixo temos o desenho de arquitetura no provedor da AWS:
 
-![Arquitetura](arquitetura/cloud/AWS-ARCH.jpeg)
+![Arquitetura](img/iot_temperatura.jpg)
