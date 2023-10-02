@@ -1,0 +1,5 @@
+aws lambda create-function --function-name  PythonWithRds2 --runtime python3.8 \
+--zip-file fileb://rds.zip --handler rds.handler \
+--role arn:aws:iam::786623674405:role/lambda-vpc-role \
+--vpc-config SubnetIds=subnet-defc6c93,subnet-b122e3d7,subnet-ac9558f3,SecurityGroupIds=sg-4db14b6f
+

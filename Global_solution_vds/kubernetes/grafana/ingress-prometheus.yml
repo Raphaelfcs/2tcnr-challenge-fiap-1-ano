@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prometheus-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    cert-manager.io/cluster-issuer: letsencrypt
+spec:
+  tls:
+  - hosts:
+    - aec5300dae6fa4180b1718f3dd05e4cb-253591941.us-east-1.elb.amazonaws.com
+    secretName: tls-secret
+  rules:
+  - host: aec5300dae6fa4180b1718f3dd05e4cb-253591941.us-east-1.elb.amazonaws.com
+    http:
+      paths:
+      - path: /graph(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: prometheus-server-np
+            port:
+              number: 80
