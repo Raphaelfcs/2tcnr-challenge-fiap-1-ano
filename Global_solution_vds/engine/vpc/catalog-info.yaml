@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: vpc-aws-main
+  description: Cria-vpc-para-AWS
+spec:
+  type: iac-terraform
+  lifecycle: production
+  owner: DevOps-iac
+dependsOn:
+    - Global_solution_vds/workloads/vpc/main.tf
