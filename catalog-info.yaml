@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: iac-projeto-iot
+  description: Cria infra estrutura que suporta monitoramento de ativos iot
+spec:
+  type: iac-terraform
+  lifecycle: production
+  owner: tracking-team
