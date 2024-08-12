@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   owner: DevOps-iac
 dependsOn:
-    - Global_solution_vds/engine/vpc
+    - https://github.com/Raphaelfcs/2tcnr-challenge-fiap-1-ano/blob/main/catalog-info.yaml
