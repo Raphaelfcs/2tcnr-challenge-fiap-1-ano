@@ -6,4 +6,4 @@ metadata:
 spec:
   type: iac-terraform
   lifecycle: production
-  owner: tracking-team
+  owner: DevOps-iac
